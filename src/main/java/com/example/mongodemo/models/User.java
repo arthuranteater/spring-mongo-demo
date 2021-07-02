@@ -48,4 +48,9 @@ public class User {
         public void setUserSettings(Map<String, String> userSettings) {
             this.userSettings = userSettings;
         }
+
+        @Override
+        public String toString() {
+            return String.format("name = " + name + " settings = " + userSettings);
+        }
     }
